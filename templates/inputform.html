@@ -1,0 +1,24 @@
+{%  extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+<br>
+<h1 class="text-center"> 전송데이터 입력</h1>
+<div class="container">
+    <form action="/methodout" method="post">
+        <div class="mb-3">
+          <label for="Name" class="form-label">name</label>
+          <input type="text" class="form-control" id="Name" name="Name" aria-describedby="nameHelp">
+          <div id="nameHelp" class="form-text">한글로 작성하세요</div>
+        </div>
+        <div class="mb-3">
+          <label for="pass" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pass" name="pass">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+{% endblock %}

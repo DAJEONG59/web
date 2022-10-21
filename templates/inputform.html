@@ -3,8 +3,9 @@
 {% block content %}
 <br>
 <h1 class="text-center"> 전송데이터 입력</h1>
+<br>
 <div class="container">
-    <form action="/methodout" method="post">
+    <form action="/methodout" method="post" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="Name" class="form-label">name</label>
           <input type="text" class="form-control" id="Name" name="Name" aria-describedby="nameHelp">
